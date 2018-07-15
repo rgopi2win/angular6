@@ -1,6 +1,6 @@
 # angular6
 
-** Built-in Directives **
+**Built-in Directives**
 
 * ngModel 
 
