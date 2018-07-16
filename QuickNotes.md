@@ -13,3 +13,5 @@
 * ngIf
 
   syntax: `*ngIf`
+  
+ * ng new <project-name>
