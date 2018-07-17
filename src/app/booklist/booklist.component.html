@@ -1,0 +1,8 @@
+<h2>{{book.name | uppercase}} Information</h2>
+<div><span>ID: {{book.id}}</span></div>
+<div><span>Name: {{book.name}}</span></div>
+<div>
+  <label>name:
+      <input [(ngModel)]="book.name" placeholder="bookname">
+  </label>
+</div>

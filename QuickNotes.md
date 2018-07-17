@@ -15,3 +15,5 @@
   syntax: `*ngIf`
   
  * ng new <project-name>
+
+ * ng generate component <componentname>
