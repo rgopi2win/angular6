@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Book } from  '../book';
-
+import { BOOKS } from "../book-array";
 @Component({
   selector: 'app-booklist',
   templateUrl: './booklist.component.html',
@@ -8,10 +8,14 @@ import { Book } from  '../book';
 })
 export class BooklistComponent implements OnInit {
 
-  book: Book = {
-    id: 1,
-    name: 'The Twelfth Night'
-  };
+  books= BOOKS;
+  selectedBook: Book;
+
+
+  onSelect(book: Book): void {
+    this.selectedBook = book;
+  }
+
   constructor() { }
 
   ngOnInit() {
