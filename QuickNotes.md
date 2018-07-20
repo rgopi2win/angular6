@@ -19,6 +19,8 @@
  * ng generate component <componentname>
  
  * ng generate  module app-routing --flat --module=app
+ 
 		`--flat puts the file in src\app instead its own folder
+		
 		--module=app tells CLI to register it in the imports array of the app module`
 		

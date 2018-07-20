@@ -9,13 +9,7 @@ import { BOOKS } from "../book-array";
 export class BooklistComponent implements OnInit {
 
   books= BOOKS;
-  selectedBook: Book;
-
-
-  onSelect(book: Book): void {
-    this.selectedBook = book;
-  }
-
+ 
   constructor() { }
 
   ngOnInit() {
