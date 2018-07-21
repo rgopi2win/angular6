@@ -1,5 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
 import { Book } from  "../book";
+import { BOOKS } from "../book-array";
 
 @Component({
   selector: 'app-book-detail',
@@ -10,9 +13,21 @@ export class BookDetailComponent implements OnInit {
 
   @Input() book: Book;
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute,
+    private location: Location)
+  { }
 
   ngOnInit() {
+    this.getHero();
   }
 
+  getHero(): void {
+    const id = +this.route.snapshot.paramMap.get('id');
+    this.book = BOOKS.find(book => book.id === id);
+  }
+
+  goBack(): void {
+    this.location.back();
+  }
 }
