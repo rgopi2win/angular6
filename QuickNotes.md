@@ -24,3 +24,6 @@
 		
 		--module=app tells CLI to register it in the imports array of the app module`
 		
+ * ng generate service <servicename>
+		It will create Component servicename+'Service'
+		
