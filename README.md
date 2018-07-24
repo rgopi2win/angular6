@@ -11,8 +11,8 @@ An NgModule is defined as a class decorated with @NgModule. The @NgModule decora
 * `declarations`
 * `exports`
 * `imports`
-*`providers`
-*`bootstrap`
+* `providers`
+* `bootstrap`
 
 
 ### View
