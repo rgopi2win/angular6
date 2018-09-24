@@ -14,9 +14,9 @@
 
   syntax: `*ngIf`
   
- * ng new <project-name>
+ * ng new `<project-name>`
 
- * ng generate component <componentname>
+ * ng generate component `<componentname>`
  
  * ng generate  module app-routing --flat --module=app
  
